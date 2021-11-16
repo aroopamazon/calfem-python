@@ -118,7 +118,7 @@ class MainWindow(QMainWindow):
         print("on_focus_item_changed", new_focus_item, reason)
 
     def on_selection_changed(self):
-        if len(self.scene.selectedItems())>0:
+        if self.scene.selectedItems():
             print("on_selection_changed", self.scene.selectedItems()[0].pos())
 
     def on_item_mouse_move(self):
