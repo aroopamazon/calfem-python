@@ -2395,7 +2395,7 @@ def plante(ex,ey,ep,D,eq=None):
     bx = 0.0
     by = 0.0
     
-    if not eq is None:
+    if eq is not None:
         bx = eq[0]
         by = eq[1]
         
