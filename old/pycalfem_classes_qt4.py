@@ -115,7 +115,7 @@ class ElementView(OpenGLFrame):
         
         self._limits = [1e300, 1e300, -1e300, -1e300]
         
-        if not (self._ex is None) and not (self._ey is None):
+        if (self._ex is not None) and (self._ey is not None):
             for elCoords in self._ex:
                 xmin = min(elCoords)
                 xmax = max(elCoords)
