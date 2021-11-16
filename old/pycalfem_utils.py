@@ -267,7 +267,7 @@ def trimesh2d(vertices, segments = None, holes = None, maxArea=None, quality=Tru
         
     filename = "./trimesh.temp/polyfile.poly"
     
-    if not segments is None:
+    if segments is not None:
         nSegments = len(segments)
     
     if not holes is None:
