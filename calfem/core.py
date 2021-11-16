@@ -3069,7 +3069,7 @@ def assem(edof,K,Ke,f=None,fe=None):
     if edof.ndim == 1:
         idx = edof-1
         K[np.ix_(idx,idx)] = K[np.ix_(idx,idx)] + Ke
-        if (not f is None) and (not fe is None):
+        if (f is not None) and (fe is not None):
             f[np.ix_(idx)] = f[np.ix_(idx)] + fe
     else:
         for row in edof:
