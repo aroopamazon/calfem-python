@@ -1010,10 +1010,10 @@ def trimesh2d(vertices, segments=None, holes=None, maxArea=None, quality=True, d
 
     filename = "./trimesh.temp/polyfile.poly"
 
-    if not segments is None:
+    if segments is not None:
         nSegments = len(segments)
 
-    if not holes is None:
+    if holes is not None:
         nHoles = len(holes)
 
     # Create a .poly file
