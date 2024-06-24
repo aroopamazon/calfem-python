@@ -251,7 +251,7 @@ def beam2e(ex,ey,ep,eq=None):
     
     qx=0.
     qy=0.
-    if not eq is None:
+    if eq is not None:
         qx=eq[0]
         qy=eq[1]
         
